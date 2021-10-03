@@ -285,7 +285,7 @@ class VenmoSource(Source):
             valid_ids.add(venmo_id)
             has_transfer = False
             has_payment = False
-            if t == 'Standard Transfer':
+            if t == 'Standard Transfer' or t == 'Merchant Payout':
                 has_transfer = True
                 has_payment = False
             elif t == 'Charge' or t == 'Payment':
